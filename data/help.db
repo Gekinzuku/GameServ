@@ -1,0 +1,50 @@
+help=attack
+Syntax: /msg GameServ attack [WarriorName]
+!Causes you to attack an enemy. Only fools take on enemies twice their size without backup.
+endhelp
+
+help=equip
+Syntax: /msg GameServ equip [Type] [Item]
+!Equips an item to a specific slot. Current slots are: Melee, ranged, or ammo
+endhelp
+
+help=ghost
+Syntax: /msg GameServ ghost [WarriorName] [password]
+!This will logout a warrior even if your host doesn't match.
+!Optionally you can just login again.
+endhelp
+
+help=list
+Syntax: /msg gamebot list {classes|races|UsersOnline}
+!Lists the stats related to the requested parameter.
+endhelp
+
+help=login
+Syntax: /msg GameServ login [WarriorName] [password]
+!Logs you in as the specified warrior. You should use the opposite command 'logout' when you are done.
+!Note: parting the channel or leaving the server will automatically log you out.
+!Changing nicks does not affect your login status.
+endhelp
+
+help=logout
+Syntax: /msg GameServ logout
+Logs you out from a warrior. Before being able to play again, you must re-login.
+endhelp
+
+help=stats
+Syntax: stats (WarriorName)
+View a warrior's stats. Optionally, you can type just stats for a view of your warrior's stats.
+endhelp
+
+help=register
+Syntax: /msg GameServ register [WarriorName] [Password] [Race] [Class] {Male|Female}
+!Registers a warrior with your password (Also logs you in as them).
+!If you want to view a chart of the stats of the races/classes, use: /msg GameServ list {Classes|Races}
+endhelp
+
+help=help
+Syntax: /msg GameServ help (command)
+!The parameter sets which help docs you view. Available parameters:
+!attack login logout list stats register
+!() - Optional parameter, [] - required parameter, {} - Choose between one or the other
+endhelp

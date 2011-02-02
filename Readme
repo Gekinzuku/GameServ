@@ -1,0 +1,10 @@
+Mysql support needs: libmysqlclient16
+
+Compiling (With mysql support): 
+g++ main.cpp irc.cpp game.cpp -o GameServ -lmysqlclient
+
+Compiling (Without mysql support): 
+Same as above only without "-lmysqlclient" be sure to comment out the line "#define USE_MYSQL" in defines.h as well.
+
+For Windows support: (Experimental)
+Comment out "#define LINUX" and uncomment "#define WINDOWS" in defines.h
